@@ -1,0 +1,4 @@
+__pycache__/
+dataset/
+DeepViT_models/
+ResNet18_models/
