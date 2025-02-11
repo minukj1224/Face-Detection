@@ -66,7 +66,6 @@ class ResNet(nn.Module):
         self.fc = nn.Linear(512 * block.expansion, num_landmarks * 2)
 
     def _make_layer(self, block, out_channels, blocks, stride=1):
-        """ ResNet의 블록을 생성하는 함수 """
         downsample = None
         if stride != 1 or self.in_channels != out_channels * block.expansion:
             downsample = nn.Sequential(

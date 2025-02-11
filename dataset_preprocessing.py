@@ -1,10 +1,10 @@
 import cv2
 import os
 
-train_txt_file = r"C:\Users\Minuk\Desktop\train\trainImageList.txt"
-test_txt_file = r"C:\Users\Minuk\Desktop\train\testImageList.txt"
-image_root = r"C:\Users\Minuk\Desktop\train"
-output_root = r"C:\Users\Minuk\Desktop\train_resized"
+train_txt_file = r"./trainImageList.txt"
+test_txt_file = r"./testImageList.txt"
+image_root = r"./train"
+output_root = r"./train_resized"
 target_size = (96, 96)
 
 train_output_txt = os.path.join(output_root, "train.txt")
